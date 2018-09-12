@@ -1,14 +1,6 @@
 # docker-zcashd
 
-Zcashd: [https://github.com/zcash/zcash](https://github.com/zcash/zcash)
-
-Image location: [https://quay.io/repository/exodusmovement/zcashd](https://quay.io/repository/exodusmovement/zcashd)
-
-Every new zcashd release have own branch where branch name is zcashd version. For each docker image release we create tag `BRANCH_NAME-xxx`, where `xxx` is release version for *current* branch. Docker image with latest tag is used only for development and contain last build (please do not use it for production!).
-
-Branches and releases:
-
- - [2.0.0](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.0)
+Zcashd v2.0.0: [https://github.com/zcash/zcash/releases/tag/v2.0.0](https://github.com/zcash/zcash/releases/tag/v2.0.0)
 
 ## Usage
 
