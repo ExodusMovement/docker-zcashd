@@ -9,6 +9,7 @@ Every new zcashd release have own branch where branch name is zcashd version. Fo
 Branches and releases:
 
  - [2.0.0](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.0)
+   - [2.0.0-001](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.0-001)
 
 ## Usage
 
