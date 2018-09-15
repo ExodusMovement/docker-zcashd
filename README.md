@@ -10,6 +10,7 @@ Branches and releases:
 
  - [2.0.0](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.0)
    - [2.0.0-001](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.0-001)
+   - [2.0.0-002](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.0-002)
 
 ## Usage
 
@@ -19,6 +20,7 @@ Branches and releases:
 
 ### Run example
 
-> docker run -it -v /home/user/.zcash-params:/home/zcashd/.zcash-params -e "ZCASHD_ARGUMENTS=-conf" zcashd
+> docker run -it -v $(pwd)/zcash-params:/home/zcashd/.zcash-params -e "ZCASHD_ARGUMENTS=-conf" zcashd
 
-**NB**. Make sure to mount `.zcash-params` in `/home/zcashd/.zcash-params`. You can download it with: `wget -qO- https://github.com/zcash/zcash/blob/master/zcutil/fetch-params.sh | bash`
+Make sure to mount `.zcash-params` in `/home/zcashd/.zcash-params`.\
+You can download it with: `docker run -it --rm -v $(pwd)/zcash-params:/home/zcashd/.zcash-params zcashd zcashd-fetch-params`
