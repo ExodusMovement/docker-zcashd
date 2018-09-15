@@ -26,20 +26,22 @@ WORKDIR /zcash
 RUN ./zcutil/build.sh --disable-tests --disable-mining -j$(nproc)
 RUN strip /zcash/src/zcashd /zcash/src/zcash-cli
 
-## RUNNER
+
 FROM ubuntu:18.04
 
 RUN apt update \
-  && apt install libgomp1 --no-install-recommends \
-  && rm -rf /var/lib/apt/*
+  && apt install -y \
+    libgomp1 \
+    wget \
+  && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /zcash/src/zcashd /zcash/src/zcash-cli /usr/local/bin/
+COPY ./fetch-params.sh /usr/local/bin/zcashd-fetch-params
 
 RUN groupadd --gid 1000 zcashd \
   && useradd --uid 1000 --gid zcashd --shell /bin/bash --create-home zcashd
 
 USER zcashd
-RUN mkdir -p /home/zcashd/.zcash
 
 # P2P & RPC
 EXPOSE 8233 8232
