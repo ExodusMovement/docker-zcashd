@@ -1,6 +1,6 @@
 # docker-zcashd
 
-Zcashd v2.0.0: [https://github.com/zcash/zcash/releases/tag/v2.0.0](https://github.com/zcash/zcash/releases/tag/v2.0.0)
+Zcashd v2.0.1: [https://github.com/zcash/zcash/releases/tag/v2.0.1](https://github.com/zcash/zcash/releases/tag/v2.0.1)
 
 ## Usage
 
