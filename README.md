@@ -11,6 +11,8 @@ Branches and releases:
  - [2.0.0](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.0)
    - [2.0.0-001](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.0-001)
    - [2.0.0-002](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.0-002)
+ - [2.0.1](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.1)
+   - [2.0.1-001](https://github.com/ExodusMovement/docker-zcashd/tree/2.0.1-001)
 
 ## Usage
 
