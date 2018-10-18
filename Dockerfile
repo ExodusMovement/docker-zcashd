@@ -1,6 +1,6 @@
 FROM ubuntu:18.04 as builder
 
-ENV BUILD_TAG 2.0.0
+ENV BUILD_TAG 2.0.1
 
 RUN apt update
 RUN apt install -y \
